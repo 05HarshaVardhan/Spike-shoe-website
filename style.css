@@ -803,3 +803,122 @@ footer .footer_main .tag .search_bar button{
     color: white;
     cursor: pointer;
 }
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    section .main .main_content {
+        flex-direction: column; /* Stack main content vertically */
+        align-items: center; /* Center content */
+        text-align: center; /* Center text */
+    }
+
+    section .main .main_content .main_text h1 {
+        font-size: 60px; /* Smaller heading on medium screens */
+    }
+
+    section .main .main_content .main_text p {
+        width: 90%; /* Make paragraph width responsive */
+    }
+
+    .products .box {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+
+    .products .box .card {
+        width: 100%; /* Full width for cards */
+    }
+}
+
+@media (max-width: 768px) {
+    section nav {
+        flex-direction: column; /* Stack navigation items */
+        align-items: center; /* Center align items */
+    }
+
+    section nav ul {
+        display: flex;
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center align menu items */
+    }
+
+    .products .box {
+        grid-template-columns: 1fr; /* One column for mobile screens */
+    }
+
+    .products .box .card {
+        width: 100%; /* Full width for cards */
+        margin-bottom: 20px; /* Space between cards */
+    }
+
+    .about .about_main {
+        flex-direction: column; /* Stack about section content */
+        align-items: center; /* Center align */
+    }
+
+    .login_form {
+        flex-direction: column; /* Stack left and right sections */
+        align-items: center; /* Center items */
+    }
+
+    .login_form .left img {
+        width: 100%; /* Responsive image */
+        max-width: 400px; /* Max width for smaller screens */
+    }
+
+    .login_form .right {
+        padding: 20px; /* Reduce padding */
+        width: 90%; /* Responsive width */
+    }
+
+    footer .footer_main {
+        flex-direction: column; /* Stack footer items vertically */
+        align-items: center; /* Center items */
+    }
+
+    footer .footer_main .tag {
+        text-align: center; /* Center text for smaller screens */
+    }
+
+    footer .footer_main .tag .search_bar {
+        width: 100%; /* Full width for search bar */
+    }
+
+    footer .footer_main .tag .search_bar input {
+        width: 100%; /* Full width for input */
+        margin-bottom: 10px; /* Space below input */
+    }
+
+    footer .footer_main .tag .search_bar button {
+        width: 100%; /* Full width for button */
+    }
+}
+
+@media (max-width: 480px) {
+    section .main .main_content .main_text h1 {
+        font-size: 40px; /* Smaller heading for very small screens */
+    }
+
+    section .main .main_content .main_text p {
+        font-size: 14px; /* Smaller text */
+    }
+
+    .products h1 {
+        font-size: 40px; /* Smaller title for products */
+    }
+
+    .about h1 {
+        font-size: 40px; /* Smaller title for about */
+    }
+
+    .review h1 {
+        font-size: 40px; /* Smaller title for review */
+    }
+
+    .login_form .right h1 {
+        font-size: 30px; /* Smaller login title */
+    }
+
+    footer .footer_main .tag h1 {
+        font-size: 20px; /* Smaller footer headings */
+    }
+}
